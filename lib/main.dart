@@ -58,7 +58,6 @@ class _MyHomePageState extends State<MyHomePage> {
           onTap: () {},
           onTapDown: (details) async {
             if (imageWidgetSize != Size.zero) {
-              RenderBox? box = context.findRenderObject() as RenderBox?;
               tapPosition = details.localPosition;
               final assetSize = await _getImageSize(imageWidget);
               final transformSize = _getTransformSize(assetSize, imageWidgetSize);
